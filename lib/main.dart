@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/pages/nunui_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,15 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return NunuiApp();
-  }
-}
-
-class NunuiApp extends StatelessWidget {
-  const NunuiApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Nunui: Learning for Kids',
+      home: NunuiMenu(),
+    );
   }
 }
