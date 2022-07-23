@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/pages/slider_page.dart';
 
 import 'package:nunui/widgets/squared_button.dart';
 
@@ -11,23 +12,24 @@ class NunuiMenu extends StatelessWidget {
       appBar: AppBar(
         title: Text('Nunui'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Row(
-            children: [
-              Expanded(child: SquaredButton()),
-              Expanded(child: SquaredButton()),
-            ],
-          ),
-          Row(
-            children: [
-              Expanded(child: SquaredButton()),
-              Expanded(child: SquaredButton()),
-            ],
-          ),
-        ],
-      ),
+      body: SliderPage(),
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.center,
+      //   children: [
+      //     Row(
+      //       children: [
+      //         Expanded(child: SquaredButton()),
+      //         Expanded(child: SquaredButton()),
+      //       ],
+      //     ),
+      //     Row(
+      //       children: [
+      //         Expanded(child: SquaredButton()),
+      //         Expanded(child: SquaredButton()),
+      //       ],
+      //     ),
+      //   ],
+      // ),
     );
   }
 }

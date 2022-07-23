@@ -14,14 +14,16 @@ class SquaredButton extends StatelessWidget {
           bottom: Radius.circular(28),
           top: Radius.circular(30),
         ),
-        child: Stack(
-          children: [
-            Image(image: AssetImage('assets/menu_images/abc.png')),
-            Positioned(
-              bottom: 0.0,
-              child: Container(
-                height: 50,
-                width: 200,
+        child: Align(
+          alignment: Alignment.center,
+          child: Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              Image(image: AssetImage('assets/menu_images/abc.png')),
+              Container(
+                alignment: Alignment.bottomCenter,
+                width: double.infinity,
+                height: 45,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
@@ -32,14 +34,13 @@ class SquaredButton extends StatelessWidget {
                     ],
                   ),
                 ),
-                child: Center(
-                    child: Text(
+                child: Text(
                   'Button Title',
                   style: TextStyle(fontWeight: FontWeight.bold),
-                )),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       decoration: BoxDecoration(
