@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:nunui/widgets/squared_button.dart';
+
 class NunuiMenu extends StatelessWidget {
   const NunuiMenu({Key? key}) : super(key: key);
 
@@ -9,8 +11,22 @@ class NunuiMenu extends StatelessWidget {
       appBar: AppBar(
         title: Text('Nunui'),
       ),
-      body: Container(
-        child: Image.asset('assets/menu_images/abc.png'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Row(
+            children: [
+              Expanded(child: SquaredButton()),
+              Expanded(child: SquaredButton()),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(child: SquaredButton()),
+              Expanded(child: SquaredButton()),
+            ],
+          ),
+        ],
       ),
     );
   }
