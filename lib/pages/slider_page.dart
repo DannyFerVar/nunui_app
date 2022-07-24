@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/widgets/slider.dart';
 import 'package:nunui/widgets/squared_button.dart';
 
 class SliderPage extends StatelessWidget {
@@ -14,12 +15,12 @@ class SliderPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(
-            child: Container(
-              margin: EdgeInsets.all(10.0),
-              width: double.infinity,
-              decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.all(Radius.circular(30))),
+            child: SliderShow(
+              slidesList: [
+                'assets/letters/a.svg',
+                'assets/letters/b.svg',
+                'assets/letters/c.svg',
+              ],
             ),
           ),
           Row(

@@ -39,31 +39,3 @@ class NunuiMenuTablet extends StatelessWidget {
     );
   }
 }
-
-class SquareButtonTablet extends StatelessWidget {
-  const SquareButtonTablet({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(3),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(
-          Radius.circular(30),
-        ),
-        border: Border.all(
-          color: Colors.red,
-          width: 2.0,
-        ),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(30)),
-        child: Image(
-          image: AssetImage('assets/menu_images/abc.png'),
-        ),
-      ),
-    );
-  }
-}

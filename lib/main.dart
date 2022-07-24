@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nunui/pages/nunui_app.dart';
 import 'package:nunui/pages/nunui_page_tablet.dart';
+import 'package:nunui/pages/slider_page.dart';
+import 'package:nunui/pages/slider_page_tablet.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,16 +17,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Nunui: Learning for Kids',
-      home: OrientationBuilder(
-        builder: (BuildContext context, Orientation orientation) {
-          final screenSize = MediaQuery.of(context).size;
-          if (screenSize.width > 500) {
-            return NunuiMenuTablet();
-          } else {
-            return NunuiMenu();
-          }
-        },
-      ),
+      home: SliderPageTablet(),
+      // home: OrientationBuilder(
+      //   builder: (BuildContext context, Orientation orientation) {
+      //     final screenSize = MediaQuery.of(context).size;
+      //     if (screenSize.width > 500) {
+      //       return NunuiMenuTablet();
+      //     } else {
+      //       return NunuiMenu();
+      //     }
+      //   },
+      // ),
     );
   }
 }
