@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nunui/pages/nunui_page_tablet.dart';
-import 'package:nunui/pages/slider_page.dart';
 import 'package:nunui/widgets/buttons.dart';
-
-import 'package:nunui/widgets/squared_button.dart';
 
 class NunuiMenu extends StatelessWidget {
   const NunuiMenu({Key? key}) : super(key: key);

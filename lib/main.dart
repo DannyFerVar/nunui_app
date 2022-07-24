@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nunui/pages/nunui_app.dart';
 import 'package:nunui/pages/nunui_page_tablet.dart';
-import 'package:nunui/pages/slider_page.dart';
-import 'package:nunui/pages/slider_page_tablet.dart';
 
 void main() {
   runApp(const MyApp());

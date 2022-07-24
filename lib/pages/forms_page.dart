@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:nunui/widgets/buttons.dart';
 import 'package:nunui/widgets/slider.dart';
-import 'package:nunui/widgets/squared_button.dart';
 
-class SliderPage extends StatelessWidget {
-  const SliderPage({Key? key}) : super(key: key);
+class LettersPage extends StatelessWidget {
+  const LettersPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Slider Name'),
+        title: Text('Forms'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -18,17 +17,24 @@ class SliderPage extends StatelessWidget {
           Expanded(
             child: SliderShow(
               slidesList: [
-                'assets/letters/a.svg',
-                'assets/letters/b.svg',
-                'assets/letters/c.svg',
+                'assets/forms/circulo.svg',
+                'assets/forms/corazon.svg',
+                'assets/forms/cruz.svg',
+                'assets/forms/cuadrado.svg',
+                'assets/forms/estrella.svg',
+                'assets/forms/hexagono.svg',
+                'assets/forms/pentagono.svg',
+                'assets/forms/rectangulo.svg',
+                'assets/forms/rombo.svg',
+                'assets/forms/triangulo.svg',
               ],
             ),
           ),
           Row(
             children: [
+              Expanded(child: LettersButton()),
               Expanded(child: NumbersButton()),
               Expanded(child: ColorsButton()),
-              Expanded(child: FormsButton()),
             ],
           ),
         ],

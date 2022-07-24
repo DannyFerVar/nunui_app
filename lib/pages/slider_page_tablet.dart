@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nunui/widgets/buttons.dart';
 import 'package:nunui/widgets/slider.dart';
-import 'package:nunui/widgets/squared_button.dart';
 
 class SliderPageTablet extends StatelessWidget {
   const SliderPageTablet({Key? key}) : super(key: key);
