@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nunui/widgets/buttons.dart';
 import 'package:nunui/widgets/slider.dart';
 
-class LettersTabletPage extends StatelessWidget {
-  const LettersTabletPage({Key? key}) : super(key: key);
+class NumbersTabletPage extends StatelessWidget {
+  const NumbersTabletPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

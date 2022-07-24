@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nunui/widgets/buttons.dart';
 import 'package:nunui/widgets/slider.dart';
 
-class LettersTabletPage extends StatelessWidget {
-  const LettersTabletPage({Key? key}) : super(key: key);
+class FormsTabletPage extends StatelessWidget {
+  const FormsTabletPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,9 +37,9 @@ class LettersTabletPage extends StatelessWidget {
             flex: 1,
             child: Column(
               children: [
-                Expanded(child: FormsButton()),
                 Expanded(child: LettersButton()),
                 Expanded(child: NumbersButton()),
+                Expanded(child: ColorsButton()),
               ],
             ),
           )
