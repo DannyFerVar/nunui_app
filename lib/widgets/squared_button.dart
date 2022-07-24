@@ -17,6 +17,7 @@ class SquaredButton extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(3),
       decoration: BoxDecoration(
+        color: Colors.white,
         boxShadow: [
           BoxShadow(
             color: Colors.black38,
