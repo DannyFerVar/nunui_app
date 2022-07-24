@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nunui/pages/nunui_page_tablet.dart';
 import 'package:nunui/pages/slider_page.dart';
+import 'package:nunui/widgets/buttons.dart';
 
 import 'package:nunui/widgets/squared_button.dart';
 
@@ -18,14 +19,14 @@ class NunuiMenu extends StatelessWidget {
         children: [
           Row(
             children: [
-              Expanded(child: SquaredButton()),
-              Expanded(child: SquaredButton()),
+              Expanded(child: LettersButton()),
+              Expanded(child: NumbersButton()),
             ],
           ),
           Row(
             children: [
-              Expanded(child: SquaredButton()),
-              Expanded(child: SquaredButton()),
+              Expanded(child: ColorsButton()),
+              Expanded(child: FormsButton()),
             ],
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/widgets/buttons.dart';
 import 'package:nunui/widgets/slider.dart';
 import 'package:nunui/widgets/squared_button.dart';
 
@@ -25,9 +26,9 @@ class SliderPage extends StatelessWidget {
           ),
           Row(
             children: [
-              Expanded(child: SquaredButton()),
-              Expanded(child: SquaredButton()),
-              Expanded(child: SquaredButton()),
+              Expanded(child: NumbersButton()),
+              Expanded(child: ColorsButton()),
+              Expanded(child: FormsButton()),
             ],
           ),
         ],

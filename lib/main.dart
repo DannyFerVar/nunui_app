@@ -17,17 +17,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Nunui: Learning for Kids',
-      home: SliderPageTablet(),
-      // home: OrientationBuilder(
-      //   builder: (BuildContext context, Orientation orientation) {
-      //     final screenSize = MediaQuery.of(context).size;
-      //     if (screenSize.width > 500) {
-      //       return NunuiMenuTablet();
-      //     } else {
-      //       return NunuiMenu();
-      //     }
-      //   },
-      // ),
+      home: OrientationBuilder(
+        builder: (BuildContext context, Orientation orientation) {
+          final screenSize = MediaQuery.of(context).size;
+          if (screenSize.width > 500) {
+            return NunuiMenuTablet();
+          } else {
+            return NunuiMenu();
+          }
+        },
+      ),
     );
   }
 }
