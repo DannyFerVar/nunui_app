@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:nunui/widgets/buttons.dart';
 import 'package:nunui/widgets/slider.dart';
 
-class SliderPageTablet extends StatelessWidget {
-  const SliderPageTablet({Key? key}) : super(key: key);
+class LettersTabletPage extends StatelessWidget {
+  const LettersTabletPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Slider Name')),
+      appBar: AppBar(title: Text('Numbers')),
       body: Row(
         children: [
           Expanded(
@@ -16,9 +16,16 @@ class SliderPageTablet extends StatelessWidget {
             child: Expanded(
               child: SliderShow(
                 slidesList: [
-                  'assets/letters/a.svg',
-                  'assets/letters/b.svg',
-                  'assets/letters/c.svg',
+                  'assets/numbers/1.svg',
+                  'assets/numbers/2.svg',
+                  'assets/numbers/3.svg',
+                  'assets/numbers/4.svg',
+                  'assets/numbers/5.svg',
+                  'assets/numbers/6.svg',
+                  'assets/numbers/7.svg',
+                  'assets/numbers/8.svg',
+                  'assets/numbers/9.svg',
+                  'assets/numbers/0.svg',
                 ],
               ),
             ),
@@ -30,9 +37,9 @@ class SliderPageTablet extends StatelessWidget {
             flex: 1,
             child: Column(
               children: [
-                Expanded(child: NumbersButton()),
                 Expanded(child: ColorsButton()),
                 Expanded(child: FormsButton()),
+                Expanded(child: LettersButton()),
               ],
             ),
           )

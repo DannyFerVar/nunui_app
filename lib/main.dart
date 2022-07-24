@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nunui/pages/nunui_app.dart';
-import 'package:nunui/pages/nunui_page_tablet.dart';
+import 'package:nunui/pages/phone/nunui_app.dart';
+import 'package:nunui/pages/tablet/nunui_page_tablet.dart';
 
 void main() {
   runApp(const MyApp());
