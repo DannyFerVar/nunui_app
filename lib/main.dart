@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nunui/pages/nunui_app.dart';
+import 'package:nunui/pages/nunui_page_tablet.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Nunui: Learning for Kids',
-      home: NunuiMenu(),
+      home: OrientationBuilder(
+        builder: (BuildContext context, Orientation orientation) {
+          final screenSize = MediaQuery.of(context).size;
+          if (screenSize.width > 500) {
+            return NunuiMenuTablet();
+          } else {
+            return NunuiMenu();
+          }
+        },
+      ),
     );
   }
 }
