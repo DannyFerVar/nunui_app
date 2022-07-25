@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nunui/widgets/buttons.dart';
+import 'package:nunui/constants.dart';
 import 'package:nunui/widgets/slider.dart';
 
 class FormsTabletPage extends StatelessWidget {
@@ -8,40 +8,21 @@ class FormsTabletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Forms')),
+      appBar: AppBar(title: kFormsTitle),
       body: Row(
         children: [
-          Expanded(
+          const Expanded(
             flex: 3,
             child: Expanded(
-              child: SliderShow(
-                slidesList: [
-                  'assets/forms/circulo.svg',
-                  'assets/forms/corazon.svg',
-                  'assets/forms/cruz.svg',
-                  'assets/forms/cuadrado.svg',
-                  'assets/forms/estrella.svg',
-                  'assets/forms/hexagono.svg',
-                  'assets/forms/pentagono.svg',
-                  'assets/forms/rectangulo.svg',
-                  'assets/forms/rombo.svg',
-                  'assets/forms/triangulo.svg',
-                ],
-              ),
+              child: SliderShow(slidesList: kFormsList),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Expanded(
             flex: 1,
-            child: Column(
-              children: [
-                Expanded(child: LettersButton()),
-                Expanded(child: NumbersButton()),
-                Expanded(child: ColorsButton()),
-              ],
-            ),
+            child: Column(children: kButtonsFormsPage),
           )
         ],
       ),

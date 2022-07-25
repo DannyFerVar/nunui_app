@@ -27,7 +27,7 @@ class _SliderShowState extends State<SliderShow> {
   @override
   Widget build(BuildContext context) {
     return PageView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       controller: sliderController,
       children:
           widget.slidesList.map((svg) => SlideContainer(svg: svg)).toList(),
@@ -48,7 +48,7 @@ class SlideContainer extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      padding: EdgeInsets.all(30),
+      padding: const EdgeInsets.all(30),
       child: SvgPicture.asset(svg),
     );
   }

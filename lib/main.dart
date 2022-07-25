@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         builder: (BuildContext context, Orientation orientation) {
           final screenSize = MediaQuery.of(context).size;
           if (screenSize.width > 500) {
-            return NunuiMenuTablet();
+            return const NunuiMenuTablet();
           } else {
-            return NunuiMenu();
+            return const NunuiMenu();
           }
         },
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/constants.dart';
 import 'package:nunui/pages/phone/colors_page.dart';
 import 'package:nunui/pages/phone/forms_page.dart';
 import 'package:nunui/pages/phone/letters_page.dart';
@@ -15,16 +16,16 @@ class LettersButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SquaredButton(
-      assetName: 'assets/menu_images/abc.png',
+      assetName: kLettersAsset,
       buttonColor: Colors.red,
-      buttonLabel: 'Letters',
+      buttonLabel: kLetters,
       routeToGo: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           final screenSize = MediaQuery.of(context).size;
           if (screenSize.width > 500) {
-            return LettersTabletPage();
+            return const LettersTabletPage();
           } else {
-            return LettersPage();
+            return const LettersPage();
           }
         },
       ),
@@ -38,16 +39,16 @@ class NumbersButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SquaredButton(
-      assetName: 'assets/menu_images/Numbers.png',
+      assetName: kNumbersAsset,
       buttonColor: Colors.blue,
-      buttonLabel: 'Numbers',
+      buttonLabel: kNumbers,
       routeToGo: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           final screenSize = MediaQuery.of(context).size;
           if (screenSize.width > 500) {
-            return NumbersTabletPage();
+            return const NumbersTabletPage();
           } else {
-            return NumbersPage();
+            return const NumbersPage();
           }
         },
       ),
@@ -61,16 +62,16 @@ class ColorsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SquaredButton(
-      assetName: 'assets/menu_images/Colors.png',
+      assetName: kColorsAsset,
       buttonColor: Colors.green,
-      buttonLabel: 'Colors',
+      buttonLabel: kColors,
       routeToGo: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           final screenSize = MediaQuery.of(context).size;
           if (screenSize.width > 500) {
-            return ColorsTabletPage();
+            return const ColorsTabletPage();
           } else {
-            return ColorsPage();
+            return const ColorsPage();
           }
         },
       ),
@@ -84,16 +85,16 @@ class FormsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SquaredButton(
-      assetName: 'assets/menu_images/Forms.png',
+      assetName: kFormsAsset,
       buttonColor: Colors.yellow,
-      buttonLabel: 'Forms',
+      buttonLabel: kForms,
       routeToGo: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           final screenSize = MediaQuery.of(context).size;
           if (screenSize.width > 500) {
-            return FormsTabletPage();
+            return const FormsTabletPage();
           } else {
-            return FormsPage();
+            return const FormsPage();
           }
         },
       ),

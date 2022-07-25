@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nunui/widgets/buttons.dart';
+import 'package:nunui/constants.dart';
 import 'package:nunui/widgets/slider.dart';
 
 class NumbersTabletPage extends StatelessWidget {
@@ -8,40 +8,19 @@ class NumbersTabletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Numbers')),
+      appBar: AppBar(title: kNumbersTitle),
       body: Row(
         children: [
-          Expanded(
+          const Expanded(
             flex: 3,
             child: Expanded(
-              child: SliderShow(
-                slidesList: [
-                  'assets/numbers/1.svg',
-                  'assets/numbers/2.svg',
-                  'assets/numbers/3.svg',
-                  'assets/numbers/4.svg',
-                  'assets/numbers/5.svg',
-                  'assets/numbers/6.svg',
-                  'assets/numbers/7.svg',
-                  'assets/numbers/8.svg',
-                  'assets/numbers/9.svg',
-                  'assets/numbers/0.svg',
-                ],
-              ),
+              child: SliderShow(slidesList: kNumbersList),
             ),
           ),
-          SizedBox(
-            width: 20,
-          ),
+          kSeparatorTabletPage,
           Expanded(
             flex: 1,
-            child: Column(
-              children: [
-                Expanded(child: ColorsButton()),
-                Expanded(child: FormsButton()),
-                Expanded(child: LettersButton()),
-              ],
-            ),
+            child: Column(children: kButtonsNumbersPage),
           )
         ],
       ),

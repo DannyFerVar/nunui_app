@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nunui/widgets/buttons.dart';
+import 'package:nunui/constants.dart';
 import 'package:nunui/widgets/slider.dart';
 
 class LettersTabletPage extends StatelessWidget {
@@ -8,56 +8,19 @@ class LettersTabletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Letters')),
+      appBar: AppBar(title: kLettersTitle),
       body: Row(
         children: [
-          Expanded(
+          const Expanded(
             flex: 3,
             child: Expanded(
-              child: SliderShow(
-                slidesList: [
-                  'assets/letters/a.svg',
-                  'assets/letters/b.svg',
-                  'assets/letters/c.svg',
-                  'assets/letters/d.svg',
-                  'assets/letters/e.svg',
-                  'assets/letters/f.svg',
-                  'assets/letters/g.svg',
-                  'assets/letters/h.svg',
-                  'assets/letters/i.svg',
-                  'assets/letters/j.svg',
-                  'assets/letters/k.svg',
-                  'assets/letters/l.svg',
-                  'assets/letters/m.svg',
-                  'assets/letters/n.svg',
-                  'assets/letters/o.svg',
-                  'assets/letters/p.svg',
-                  'assets/letters/q.svg',
-                  'assets/letters/r.svg',
-                  'assets/letters/s.svg',
-                  'assets/letters/t.svg',
-                  'assets/letters/u.svg',
-                  'assets/letters/v.svg',
-                  'assets/letters/w.svg',
-                  'assets/letters/x.svg',
-                  'assets/letters/y.svg',
-                  'assets/letters/z.svg',
-                ],
-              ),
+              child: SliderShow(slidesList: kLettersList),
             ),
           ),
-          SizedBox(
-            width: 20,
-          ),
+          kSeparatorTabletPage,
           Expanded(
             flex: 1,
-            child: Column(
-              children: [
-                Expanded(child: NumbersButton()),
-                Expanded(child: ColorsButton()),
-                Expanded(child: FormsButton()),
-              ],
-            ),
+            child: Column(children: kButtonsLettersPage),
           )
         ],
       ),

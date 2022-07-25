@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/constants.dart';
 
 class SquaredButton extends StatelessWidget {
   final String assetName;
@@ -18,14 +19,16 @@ class SquaredButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => routeToGo));
+        Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => routeToGo),
+            (route) => route.isFirst);
       },
       child: Container(
-        margin: EdgeInsets.all(3),
+        margin: const EdgeInsets.all(3),
         decoration: BoxDecoration(
           color: Colors.white,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.black38,
               offset: Offset(5, 5),
@@ -36,12 +39,12 @@ class SquaredButton extends StatelessWidget {
             color: buttonColor,
             width: 2.0,
           ),
-          borderRadius: BorderRadius.all(
+          borderRadius: const BorderRadius.all(
             Radius.circular(30),
           ),
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.vertical(
+          borderRadius: const BorderRadius.vertical(
             bottom: Radius.circular(28),
             top: Radius.circular(30),
           ),
@@ -64,7 +67,7 @@ class SquaredButton extends StatelessWidget {
                   ),
                   child: Text(
                     buttonLabel,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: kTitlesTextStyle,
                   ),
                 ),
               ],

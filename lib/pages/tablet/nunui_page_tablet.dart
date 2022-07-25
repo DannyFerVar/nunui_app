@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nunui/constants.dart';
 import 'package:nunui/widgets/buttons.dart';
 
 class NunuiMenuTablet extends StatelessWidget {
@@ -8,13 +9,13 @@ class NunuiMenuTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Nunui'),
+        title: kAppTitle,
       ),
       body: Column(
         children: [
           Expanded(
             child: Row(
-              children: [
+              children: const [
                 SizedBox(width: 60),
                 Expanded(child: LettersButton()),
                 SizedBox(width: 60),
@@ -25,7 +26,7 @@ class NunuiMenuTablet extends StatelessWidget {
           ),
           Expanded(
             child: Row(
-              children: [
+              children: const [
                 SizedBox(width: 60),
                 Expanded(child: ColorsButton()),
                 SizedBox(width: 60),
