@@ -15,11 +15,16 @@ const String kNumbersAsset = 'assets/menu_images/Numbers.png';
 const String kColorsAsset = 'assets/menu_images/Colors.png';
 const String kFormsAsset = 'assets/menu_images/Forms.png';
 
-const TextStyle kAppBarStyle = TextStyle(fontFamily: 'Josefin Sans');
+const TextStyle kAppBarStyle = TextStyle(
+  fontFamily: 'Josefin Sans',
+  color: Colors.black,
+);
 const TextStyle kTitlesTextStyle = TextStyle(
   fontFamily: 'Josefin Sans',
   fontSize: 25,
 );
+
+const Color kAppBarColor = Color(0xffB2DFDB);
 
 const List<String> kColorsList = [
   'assets/colors/rojo.svg',

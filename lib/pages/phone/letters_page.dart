@@ -8,9 +8,7 @@ class LettersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: kLettersTitle,
-      ),
+      appBar: AppBar(title: kLettersTitle, backgroundColor: kAppBarColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

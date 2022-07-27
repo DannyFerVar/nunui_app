@@ -8,7 +8,7 @@ class LettersTabletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: kLettersTitle),
+      appBar: AppBar(title: kLettersTitle, backgroundColor: kAppBarColor),
       body: Row(
         children: [
           const Expanded(

@@ -8,9 +8,7 @@ class ColorsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: kColorsTitle,
-      ),
+      appBar: AppBar(title: kColorsTitle, backgroundColor: kAppBarColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

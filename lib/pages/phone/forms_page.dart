@@ -8,9 +8,7 @@ class FormsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: kFormsTitle,
-      ),
+      appBar: AppBar(title: kFormsTitle, backgroundColor: kAppBarColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

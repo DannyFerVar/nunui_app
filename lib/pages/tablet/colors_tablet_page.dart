@@ -8,7 +8,7 @@ class ColorsTabletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: kColorsTitle),
+      appBar: AppBar(title: kColorsTitle, backgroundColor: kAppBarColor),
       body: Row(
         children: [
           const Expanded(

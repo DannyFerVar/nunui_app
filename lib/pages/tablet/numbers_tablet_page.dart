@@ -8,7 +8,7 @@ class NumbersTabletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: kNumbersTitle),
+      appBar: AppBar(title: kNumbersTitle, backgroundColor: kAppBarColor),
       body: Row(
         children: [
           const Expanded(

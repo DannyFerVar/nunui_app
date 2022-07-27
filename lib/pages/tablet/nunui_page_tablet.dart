@@ -8,9 +8,7 @@ class NunuiMenuTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: kAppTitle,
-      ),
+      appBar: AppBar(title: kAppTitle, backgroundColor: kAppBarColor),
       body: Column(
         children: [
           Expanded(
