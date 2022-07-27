@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Nunui: Learning for Kids',
+      title: 'Nunui',
       home: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           final screenSize = MediaQuery.of(context).size;
